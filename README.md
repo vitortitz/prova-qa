@@ -2,7 +2,7 @@
 
 Este desafio tem o intuito de avaliar suas habilidades em testes automatizados e manuais
 
-# Descrição Geral
+## Descrição Geral
 
 - https://fakerestapi.azurewebsites.net/index.html
 
@@ -12,7 +12,7 @@ Este desafio tem o intuito de avaliar suas habilidades em testes automatizados e
 
 - Com algumas requisições podemos adcionar, editar, pesquisar ou remover registros.
 
-# O que sua prova deve conter
+## O que sua prova deve conter
 
 1. Escolha duas dentre as collections da API de Livros. (**Exceto as coleções de usuários e atividades**)
 
