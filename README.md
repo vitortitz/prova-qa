@@ -32,7 +32,7 @@ Você deve abrir uma Pull Request para [este repositório](https://github.com/mb
 
 1. Primeiro, faça um fork deste projeto para sua conta no Github
  
-2. Em seguida, implemente sua solução seguindo as [instruções que estão acima]
+2. Em seguida, implemente sua solução seguindo as instruções que estão acima
 
 3. Envie o link do seu Pull Request, com a resultado da prova, para manuel.neto@trademaster.com.br com cópia para seu headhunter
 
