@@ -1,6 +1,6 @@
 # Prova QA
 
-Este desafio tem o intuito de avaliar suas habilidades em testes automatizados e manuais
+Este desafio tem o intuito de avaliar suas habilidades em testes automatizados e manuais.
 
 ## Descrição Geral
 
@@ -22,28 +22,26 @@ Este desafio tem o intuito de avaliar suas habilidades em testes automatizados e
 
 Você deve abrir uma Pull Request para [este repositório](https://github.com/mbnetobr/prova-qa), contendo os itens a seguir:
 
-- Arquivo no fromato Json exportado do Postman contendo as requisições
+- Arquivo no fromato Json exportado do Postman contendo as requisições.
 
-- Projeto de Testes Automatizados contendo uma suíte de testes de API
+- Projeto de Testes Automatizados contendo uma suíte de testes de API.
 
-- Instruções de como executar o projeto
+- Instruções de como executar o projeto.
 
 ## Instruções de entrega
 
-1. Primeiro, faça um fork deste projeto para sua conta no Github
+1. Primeiro, faça um fork deste projeto para sua conta no Github.
  
-2. Em seguida, implemente sua solução seguindo as instruções que estão acima
+2. Em seguida, implemente sua solução seguindo as instruções que estão acima.
 
-3. Envie o link do seu Pull Request, com a resultado da prova, para manuel.neto@trademaster.com.br com cópia para seu headhunter
+3. Envie o link do seu Pull Request, com a resultado da prova, para manuel.neto@trademaster.com.br com cópia para seu headhunter.
 
 ## Pontos de Atenção
 
-1. Tenha atenção para a qualidade e complexidade do projeto que você está montando
+1. Tenha atenção para a qualidade e complexidade do projeto que você está montando.
 
-2. Não fique em cenários comuns de teste, valide erros, fluxo de exceção e relações entre as coleções
+2. Não fique em cenários comuns de teste, valide erros, fluxo de exceção e relações entre as coleções.
 
-3. Foque em construir um projeto simples mais bem elaborado, utilize algum padrão de projeto, gere relatórios, reutilize código etc
+3. Foque em construir um projeto simples mais bem elaborado, utilize algum padrão de projeto, gere relatórios, reutilize código etc.
 
-4. Mostre que você é **Sênior**, se ainda não é, mostre que pode se tornar
-
-Aguardo seu Pull Request e Boa Sorte
+4. Mostre que você é **Sênior**, se ainda não é, mostre que pode se tornar.
