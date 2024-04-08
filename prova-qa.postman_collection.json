@@ -1,0 +1,561 @@
+{
+	"info": {
+		"_postman_id": "474a2931-8f46-452a-8a5b-7455609c4737",
+		"name": "prova-qa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34109981"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get Specific User",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"// variavel id usuario para buscar usuario especifico \r",
+											"pm.variables.set('id_User', \"6\");\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.globals.set('method', 'GET')\r",
+											"eval(pm.variables.get('commonTests'))();"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUserUrl}}/{{id_User}}",
+									"host": [
+										"{{basicUserUrl}}"
+									],
+									"path": [
+										"{{id_User}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get Usuarios",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.globals.set('method', 'GET')\r",
+											"eval(pm.variables.get('commonTests'))();"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicUserUrl}}",
+									"host": [
+										"{{basicUserUrl}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "POST Usuario",
+					"item": [
+						{
+							"name": "Usuario",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.globals.set('method', 'POST')\r",
+											"eval(pm.variables.get('commonTests'))();"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 15,\r\n  \"userName\": \"\",\r\n  \"password\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUserUrl}}",
+									"host": [
+										"{{basicUserUrl}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"item": [
+						{
+							"name": "Put User",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"// variavel id usuario para buscar usuario especifico \r",
+											"pm.variables.set('id_User', \"6\");"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.globals.set('method', 'PUT')\r",
+											"eval(pm.variables.get('commonTests'))();"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 7,\r\n  \"userName\": \"Pedro\",\r\n  \"password\": \"91587\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicUserUrl}}/{{id_User}}",
+									"host": [
+										"{{basicUserUrl}}"
+									],
+									"path": [
+										"{{id_User}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"item": [
+						{
+							"name": "Delete User",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.globals.set('method', 'DELETE')\r",
+											"eval(pm.variables.get('commonTests'))();"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"pm.variables.set('id_User', '5')\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicUserUrl}}/{{id_User}}",
+									"host": [
+										"{{basicUserUrl}}"
+									],
+									"path": [
+										"{{id_User}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Author",
+			"item": [
+				{
+					"name": "GET",
+					"item": [
+						{
+							"name": "Get Specific Author",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"// variavel id usuario para buscar usuario especifico \r",
+											"pm.variables.set('id_Author', \"6\");\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.globals.set('method', 'GET')\r",
+											"eval(pm.variables.get('commonTests'))();"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicAuthorUrl}}/{{id_Author}}",
+									"host": [
+										"{{basicAuthorUrl}}"
+									],
+									"path": [
+										"{{id_Author}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Specific Author By Book",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"// variavel id usuario para buscar usuario especifico \r",
+											"pm.variables.set('id_Book', \"4\");\r",
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.globals.set('method', 'GET')\r",
+											"eval(pm.variables.get('commonTests'))();"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicAuthorUrl}}/authors/books/{{id_Book}}",
+									"host": [
+										"{{basicAuthorUrl}}"
+									],
+									"path": [
+										"authors",
+										"books",
+										"{{id_Book}}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get Authors",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.globals.set('method', 'GET')\r",
+											"eval(pm.variables.get('commonTests'))();"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{basicAuthorUrl}}",
+									"host": [
+										"{{basicAuthorUrl}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "POST",
+					"item": [
+						{
+							"name": "POST Author",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.globals.set('method', 'POST')\r",
+											"eval(pm.variables.get('commonTests'))();"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 200,\r\n  \"idBook\": 98,\r\n  \"firstName\": \"Roberto\",\r\n  \"lastName\": \"Pereira\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicAuthorUrl}}",
+									"host": [
+										"{{basicAuthorUrl}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PUT",
+					"item": [
+						{
+							"name": "Put Author",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"// variavel id usuario para buscar usuario especifico \r",
+											"pm.globals.set('id_Author', \"6\");"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.globals.set('method', 'PUT')\r",
+											"eval(pm.variables.get('commonTests'))();"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"id\": 200,\r\n  \"idBook\": 98,\r\n  \"firstName\": \"Roberto\",\r\n  \"lastName\": \"Pereira\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{basicAuthorUrl}}/{{id_Author}}",
+									"host": [
+										"{{basicAuthorUrl}}"
+									],
+									"path": [
+										"{{id_Author}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "DELETE",
+					"item": [
+						{
+							"name": "Delete Author",
+							"event": [
+								{
+									"listen": "prerequest",
+									"script": {
+										"exec": [
+											"pm.globals.set('id_Author', '5')"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								},
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"pm.globals.set('method', 'DELETE')\r",
+											"eval(pm.variables.get('commonTests'))();"
+										],
+										"type": "text/javascript",
+										"packages": {}
+									}
+								}
+							],
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{basicAuthorUrl}}/{{id_Author}}",
+									"host": [
+										"{{basicAuthorUrl}}"
+									],
+									"path": [
+										"{{id_Author}}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
